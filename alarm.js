@@ -19,12 +19,12 @@ var onLoad = function(){
 
 function decrement(){
   startcount = document.querySelector('.counter');
-  if(startcount != null){
+
     startcount.innerHTML--;
-  }
-  else{
+    if(startcount.innerHTML == 0){
+    stoping();
     alert("time Out!");
-  }
+    }
   }
 
 
